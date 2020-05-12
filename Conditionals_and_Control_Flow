@@ -1,0 +1,154 @@
+# False
+# True
+# print(False)
+# print(True)
+# # if (CONDITION --> True/False):
+# # THEN THIS
+# if True:
+# 	print("Hello")
+
+# if False:
+# 	print("Hi") # not printing
+
+# print("")
+# # ==  < > <= >= != comparison operators
+# print(5 == 5)
+# print(5 != 5)
+# print(5 > 5)
+# print(5 < 5)
+# print(5 < 6)
+# print(5 <= 6)
+
+# print("")
+
+# sergey_hours_worked = 40
+# print(sergey_hours_worked > 40) # False
+# print(sergey_hours_worked > 30) # True
+# print(sergey_hours_worked >= 30) # True
+# print(sergey_hours_worked == 40) # True
+
+# print("")
+
+# sergey_hours_worked = 41
+# if sergey_hours_worked > 40:
+# 	print("Pay him overtime")
+
+
+# print("")
+# print("")
+
+# -----------------------------------------------
+
+# AND
+print(True and True)
+print(True and False)
+
+print("")
+
+math_homework = False
+long_essays = False
+print(math_homework and long_essays)
+print("")
+
+icecreem = True
+pizza = True
+print(pizza and icecreem)
+print("")
+
+# OR 
+print(False or True)
+print(True or False)
+print("")
+poison = False
+pizza = True
+print(pizza or poison)
+print(poison or pizza)
+print("")
+
+# NOT
+print(not True)
+print(not False)
+print("")
+print(not(True or False))
+print("")
+# ------------------------------------------
+
+# CONDITIONALS AND CONTROL FLOW
+
+bob_hours_worked = 40
+if bob_hours_worked > 39:
+	print("he worked overtime")
+print("")
+
+john_homework = True
+john_throw_out_grabage = True
+if john_homework and john_throw_out_grabage:
+	print("John can play XBOX 360")
+print("")
+
+if not(john_homework or not (john_throw_out_grabage and john_homework)):
+	print("John can play XBOX 360") # FALSE
+print("")
+
+# rock paper scissors
+
+human = "rock"
+computer = "scissors"
+computer = "bananas"
+if human == "rock" and computer == "scissors":
+	human_score = 1
+elif human == "rock" and computer =="bananas":
+	computer_score = 0
+	human_score = 0
+	print("you cant pick up any thing than rock or scissors")
+print("")
+
+if human == "rock" or computer == "scissors":
+	human_score = 1
+	print(False)
+elif human == "rock" and computer =="bananas":
+	computer_score = 0
+	human_score = 0
+	print("you cant pick up any thing than rock or scissors")
+print("")
+
+if computer != "rock" or computer != "scissors" or computer != "paper":
+	computer = "rock"
+	print("wrong choice, pick again")
+
+if computer != "rock" and computer != "scissors" and computer != "paper":
+	computer = "rock"
+	print("wrong choice, pick again")
+
+	# LOOP
+for i in range(5):
+	print("Hello")
+print("")
+for i in range(5, 11):
+	print(i)
+print("")
+
+print(list(range(5)))
+print(range(5))
+
+print("")
+
+# [1,2,3] --> 6 COUNT
+count = 0
+for number in range(1,4):
+	count = count + number
+	print(count)
+
+print("")
+
+# write a function that sums all elements of a list and returns them
+def sum_list(my_list):
+	count = 0
+	for number in my_list:
+		count = count + number
+	return count
+#test 
+assert 6 == 6
+assert sum_list([1, 2 ,3]) == 6
+assert sum_list([1, 2, 3, 4]) == 10
+print(sum_list([1,2]))
